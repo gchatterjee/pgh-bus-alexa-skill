@@ -1,0 +1,78 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "pittsburgh bus tracker",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NextBusByNumberIntent",
+                    "slots": [
+                        {
+                            "name": "BusNumber",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "BusBound",
+                            "type": "Bound"
+                        }
+                    ],
+                    "samples": [
+                        "{BusNumber}",
+                        "next {BusNumber}",
+                        "when is the next {BusNumber}",
+                        "when's the next {BusNumber}",
+                        "when is the next {BusNumber} bus",
+                        "when's the next {BusNumber} bus",
+                        "what is the next {BusNumber}",
+                        "what's the next {BusNumber}",
+                        "what is the next {BusNumber} bus",
+                        "what's the next {BusNumber} bus",
+                        "{BusBound} {BusNumber}",
+                        "next {BusBound} {BusNumber}",
+                        "when is the next {BusBound} {BusNumber}",
+                        "when's the next {BusBound} {BusNumber}",
+                        "when is the next {BusBound} {BusNumber} bus",
+                        "when's the next {BusBound} {BusNumber} bus",
+                        "what is the next {BusBound} {BusNumber}",
+                        "what's the next {BusBound} {BusNumber}",
+                        "what is the next {BusBound} {BusNumber} bus",
+                        "what's the next {BusBound} {BusNumber} bus",
+                        "{BusNumber} {BusBound}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Bound",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "outbound"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "inbound"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
